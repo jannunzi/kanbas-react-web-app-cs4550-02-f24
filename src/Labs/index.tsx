@@ -6,7 +6,7 @@ import Lab3 from "./Lab3";
 import TOC from "./TOC";
 export default function Labs() {
   return (
-    <div id="wd-labs">
+    <div id="wd-labs" className="container-fluid">
       <h1>Welcome to Web Dev</h1>
       <h1>Labs</h1>
       <TOC />

@@ -1,35 +1,71 @@
+import { AiOutlineDashboard } from "react-icons/ai";
+import { IoCalendarOutline } from "react-icons/io5";
+import { LiaBookSolid, LiaCogSolid } from "react-icons/lia";
+import { FaInbox, FaRegCircleUser } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 export default function KanbasNavigation() {
   return (
-    <div id="wd-kanbas-navigation">
-      <a href="https://www.northeastern.edu/" id="wd-neu-link" target="_blank">
-        Northeastern
+    <div
+      style={{ width: "140px" }}
+      className="position-fixed top-0 bottom-0 bg-dark rounded-0 list-group d-none d-md-block border-0"
+      id="wd-kanbas-navigation"
+    >
+      <a
+        className="list-group-item bg-dark text-white text-center border-0"
+        href="https://www.northeastern.edu/"
+        id="wd-neu-link"
+        target="_blank"
+      >
+        <img src="/images/NEU.png" alt="Northeastern" width="100px" />
       </a>
-      <br />
-      <Link to="/Kanbas/Account" id="wd-account-link">
+      <Link
+        className="list-group-item bg-white text-black text-center border-0"
+        to="/Kanbas/Account"
+        id="wd-account-link"
+      >
+        <FaRegCircleUser className="fs-1 text text-black" />
+        <br />
         Account
       </Link>
-      <br />
-      <Link to="/Kanbas/Dashboard" id="wd-dashboard-link">
+      <Link
+        className="list-group-item bg-dark text-white text-center border-0"
+        to="/Kanbas/Dashboard"
+        id="wd-dashboard-link"
+      >
+        <AiOutlineDashboard className="fs-1 text-danger" />
+        <br />
         Dashboard
       </Link>
-      <br />
-      <Link to="/Kanbas/Dashboard" id="wd-course-link">
+      <Link
+        className="list-group-item bg-dark text-white text-center border-0"
+        to="/Kanbas/Dashboard"
+        id="wd-course-link"
+      >
+        <LiaBookSolid className="fs-1 text-danger" />
+        <br />
         Courses
       </Link>
-      <br />
-      <Link to="/Kanbas/Calendar" id="wd-calendar-link">
+      <Link
+        className="list-group-item bg-dark text-white text-center border-0"
+        to="/Kanbas/Calendar"
+        id="wd-calendar-link"
+      >
         Calendar
       </Link>
-      <br />
-      <Link to="/Kanbas/Inbox" id="wd-inbox-link">
+      <Link
+        className="list-group-item bg-dark text-white text-center border-0"
+        to="/Kanbas/Inbox"
+        id="wd-inbox-link"
+      >
         Inbox
       </Link>
-      <br />
-      <Link to="/Labs" id="wd-labs-link">
+      <Link
+        className="list-group-item bg-dark text-white text-center border-0"
+        to="/Labs"
+        id="wd-labs-link"
+      >
         Labs
       </Link>
-      <br />
     </div>
   );
 }
