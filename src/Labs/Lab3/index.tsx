@@ -1,18 +1,24 @@
+import Add from "./Add";
 import AddingAndRemovingToFromArrays from "./AddingAndRemovingToFromArrays";
 import ArrowFunctions from "./ArrowFunctions";
 import BooleanVariables from "./BooleanVariables";
+import Classes from "./Classes";
 import ConditionalOutputIfElse from "./ConditionalOutputIfElse";
 import ConditionalOutputInline from "./ConditionalOutputInline";
 import Destructing from "./Destructing";
 import FilterFunction from "./FilterFunction";
 import FunctionDestructing from "./FunctionDestructing";
+import Highlight from "./Highlight";
 import House from "./House";
 import IfElse from "./IfElse";
 import ImpliedReturn from "./ImpliedReturn";
 import JsonStringify from "./JsonStringify";
 import LegacyFunctions from "./LegacyFunctions";
+import PathParameters from "./PathParameters";
 import SimpleArrays from "./SimpleArrays";
 import Spreading from "./Spreading";
+import Square from "./Square";
+import Styles from "./Styles";
 import TemplateLiterals from "./TemplateLiterals";
 import TodoList from "./todos/TodoList";
 import VariablesAndConstants from "./VariablesAndConstants";
@@ -35,12 +41,31 @@ export default function Lab3() {
       <SimpleArrays />
       <AddingAndRemovingToFromArrays />
       <FilterFunction />
-      <House />
+      <Highlight>
+        <House />
+      </Highlight>
       <JsonStringify />
       <TodoList />
       <Spreading />
       <Destructing />
       <FunctionDestructing />
+      <Classes />
+      <Styles />
+      <Add a={1} b={2} />
+      <Square>5</Square>
+      <Highlight>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipitratione
+        eaque illo minus cum, saepe totam vel nihil repellat nemo explicabo
+        excepturi consectetur. Modi omnis minus sequi maiores, provident
+        voluptates.
+      </Highlight>
+      <PathParameters />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 }

@@ -1,13 +1,18 @@
-import { Routes, Route, Navigate } from "react-router";
+import { Routes, Route, Navigate, useParams } from "react-router";
 import Home from "./Home";
 import Modules from "./Modules";
 import CoursesNavigation from "./Navigation";
 import PeopleTable from "./People/Table";
+import { courses } from "../Database";
 
 export default function Courses() {
+  const { cid } = useParams();
+  const course = courses.find((course) => course._id === cid);
+
   return (
     <div>
-      <h2>Course 1234</h2>
+      <h2>{course && course.name}</h2>
+      {/* {JSON.stringify(course)} */}
       <div className="d-flex">
         <div>
           <CoursesNavigation />
