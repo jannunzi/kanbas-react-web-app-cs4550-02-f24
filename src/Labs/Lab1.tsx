@@ -1,9 +1,18 @@
+import { useSelector } from "react-redux";
+import HelloRedux from "./Lab4/ReduxExamples/HelloRedux";
+
 export default function Lab1() {
+  const { message } = useSelector((store: any) => store.helloReducer);
+  const { count } = useSelector((state: any) => state.counterReducer);
+
   return (
     <div id="wd-lab1">
       <h2>Lab 1</h2>
       <h3>HTML Examples</h3>
+      {message}
+      <h4> Counter: {count}</h4>
       <div id="wd-h-tag">
+        <HelloRedux />
         <h4>Heading Tags</h4>
         Text documents are often broken up into several sections and
         subsections. Each section is usually prefaced with a short title or
